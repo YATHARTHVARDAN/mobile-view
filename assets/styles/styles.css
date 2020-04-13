@@ -1,22 +1,17 @@
 /* Fonts family */
 
-.mont
-{
-    font-family: 'Montserrat', sans-serif;
+.mont {
+  font-family: "Montserrat", sans-serif;
 }
 
-.openSans
-{
-    font-family: 'Open Sans', sans-serif;
+.openSans {
+  font-family: "Open Sans", sans-serif;
 }
 
-.alegreya
-{
-    font-family: 'Alegreya Sans', sans-serif;
+.alegreya {
+  font-family: "Alegreya Sans", sans-serif;
 }
 /*Fonts section end*/
-
-
 
 /* Home Page*/
 #Home_Page
@@ -182,8 +177,7 @@ lottie-player
     padding-right:10%;
     border-radius:5px;
     border-width:0px;
-
-}
+  }
 
 #email,#name
 { 
@@ -251,22 +245,12 @@ body
 }
 
 
-/* ENd of home page*/
-
-
 
 
 /* Team Page*/
 
-
-
 /*End of team page*/
 
-
-
-
 /* Common style*/
-
-
 
 /* End of common style*/
