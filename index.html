@@ -18,7 +18,7 @@
         <!--End of script for lottie files -->
     </head>
     <body>
-        <div id = "Home_Page">
+        <div onclick="close_menu()" id = "Home_Page" class="">
             <div id="fr">
                 <img src="assets/images/white text transparent back logo.png" class="head_logo"/>
             <div>
@@ -110,37 +110,43 @@
             </div>
         </div>
 
-      <div id="Team_Page" class="mont">
+      <div onclick="close_menu()" id="Team_Page">
       <!-- Header -->
       <div class="team-header">
-        <img
-          src="./assets/images/black text transparent back follege logo.png"
-        />
-        <h2>Meet the team!</h2>
-        <p>We work hard and Party harder!</p>
+        <img src="assets/images/black text transparent back follege logo.png" class="head_logo"/>     
+           <h2 class="mont text_black anim_heading meet">Meet the team!</h2>
+        <p class="mont text_green party">We work hard and Party harder!</p>
       </div>
       <!-- Card -->
       <div class="card"></div>
       <!-- End Card -->
 
       <!-- Footer -->
-      <div class="team-footer">
-        <h2 class="alegreya">follege<sup>TM</sup></h2>
-        <p>
-          for college students who want to leverage college life to its full
-          potential, follege is a student only social platform that connects
-          college students across the globe; unlike Facebook, Instagram or
-          WhatsApp, it provides students access to personalised content, career
-          opportunities, and an official platform to stay connected with college
-          administration and alumni.
-        </p>
-        <p>Copyright©2020follege-AllRightsReserved.New Delhi,India</p>
-        <p><span>hello@follege.com</span></p>
-      </div>
+      <div class="bottom black" style="position: static; bottom: 0px;">
+        <h4 class="alegreya text_white">follege<sup style="font-size:60%;">TM</sup></h4> 
+        <p class="mont bottom_para text_white">for college students who want to leverage college life to its full potential, follege is a student only social platform that connects college students across the globe, unlike Facebook, Instagram or Whatsapp, it provides sudents access to personalisez content, career opportunities, and an official platform to stay connected with college administration and alumni.</p>
+        <p class="mont bottom_copy text_white">Copyright &copy; 2020 follege - All Rights Reserved</p>
+        <p class="mont bottom_copy text_white">New Delhi, India</p>
+        <p class="last_green bottom_para">hello@follege.com</p>
+    </div>
       <!-- Footer end -->
     </div>
 
-    <div id="pop_nav"></div>
+    <div id="pop_nav">
+        <div id="menu">
+            <ul onclick="close_menu()" class="menu_list">
+                <li class="mont text_white"><span class="text_white">Community</span></li>
+                <li class="mont text_white"><span class="text_white">Internships</span></li>
+                <li class="mont text_white"><span class="text_white">Contact</span></li>
+                <li onclick="change_page_to_team()" class="mont text_white"><span class="text_white">Team</span></li>
+                <li class="mont text_white"><span onclick="change_page_to_home()" class="text_white">Home</span></li>
+            </ul>
+            <div id="close_btn"><span onclick="close_menu()">&times;</span></div>
+        </div>
+        <div  id = "menu_btn" style="display:block;">
+            <img onclick="open_menu()" src="assets/images/output-onlinepngtools.png" class="menu_btn"/>
+        </div>
+    </div>
     <script src="assets/js/team_js.js"></script>
     <script src="assets/js/js.js"></script>
 

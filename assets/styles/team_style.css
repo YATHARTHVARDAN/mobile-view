@@ -1,11 +1,11 @@
-:root {
+/* :root {
   --color-primary: #17e0a0;
-}
+} */
 
 /* ----------- */
 /* Team Header */
 /* ----------- */
-.team-header {
+/*.team-header {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,7 +30,7 @@
 /* ----------- */
 /* Team Footer */
 /* ----------- */
-.team-footer {
+/*.team-footer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -57,4 +57,4 @@
   left: -5px;
   font-size: 1.5rem;
   font-weight: 100;
-}
+} */

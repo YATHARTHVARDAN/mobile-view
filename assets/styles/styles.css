@@ -1,3 +1,29 @@
+@keyframes menu_uncollapse
+{
+    from{width:0px;}
+    to{width:350px;}
+}
+@-moz-keyframes menu_uncollapse
+{
+    from{width:0px;}
+    to{width:370px;}
+}
+@-o-keyframes menu_uncollapse
+{
+    from{width:0px;}
+    to{width:370px;}
+}
+@-webkit-keyframes menu_uncollapse
+{
+    from{width:0px;}
+    to{width:370px;}
+}
+
+@keyframes home_effect
+{
+    from{left:450px;}
+    to{left:0px;}
+}
 /* Fonts family */
 
 .mont {
@@ -16,9 +42,27 @@
 /* Home Page*/
 #Home_Page
 {
+    display:block;
     width:100%;
     text-align: center;
-
+    animation-name: home_effect;
+    animation-duration:1.5s;
+    animation-delay:0.3s;
+    animation-fill-mode: forwards;
+    -webkit-animation-name: home_effect;
+    -webkit-animation-duration:1.5s;
+    -webkit-animation-delay:0.3s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-name: home_effect;
+    -moz-animation-duration:1.5s;
+    -moz-animation-delay:0.3s;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-name: home_effect;
+    -o-animation-duration:1.5s;
+    -o-animation-delay:0.3s;
+    -o-animation-fill-mode: forwards;
+    position:absolute;
+    left:450px;
 }
 #fr
 {
@@ -46,7 +90,7 @@
 .green_button
 {
     color:white;
-    background-color:#06ed99;
+    background-color:#00e096;
 }
 .green_btn 
 {
@@ -169,7 +213,7 @@ lottie-player
 .whatsapp_btn
 {
     color:white;
-    background-color:#06ed99;
+    background-color:#00e096;
     font-weight:bold;
     padding-bottom:2%;
     padding-top:2%;
@@ -203,7 +247,7 @@ textarea
 #submit
 {
     color:white;
-    background-color:#06ed99;
+    background-color:#00e096;
     font-weight:bold;
     padding-bottom:2%;
     padding-top:2%;
@@ -226,6 +270,8 @@ textarea
     line-height: 18px;
     /* margin-top:8%;
     margin-bottom:19%; */
+    padding-top:10%;
+    padding-bottom:20%;
 }
 .bottom_copy
 {
@@ -236,7 +282,7 @@ textarea
 .last_green
 {
     /* margin-top:5%; */
-    color:#06ed99;
+    color:#00e096;
     padding-bottom:5%;
 }
 body
@@ -244,13 +290,106 @@ body
     overflow-y: scroll;
 }
 
-
-
-
 /* Team Page*/
+
+#Team_Page
+{
+    display:none;
+    width:100%;
+    text-align:center;
+    animation-name: home_effect;
+    animation-duration:1.5s;
+    animation-fill-mode: forwards;
+    -webkit-animation-name: home_effect;
+    -webkit-animation-duration:1.5s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-name: home_effect;
+    -moz-animation-duration:1.5s;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-name: home_effect;
+    -o-animation-duration:1.5s;
+    -o-animation-fill-mode: forwards;
+    position:absolute;
+    left:450px;
+}
+.meet
+{
+    text-align:center;
+    margin-bottom:0px;
+}
+.text_green
+{
+    color:#00e096;
+    font-weight:lighter;
+}
 
 /*End of team page*/
 
 /* Common style*/
 
+#pop_nav
+{
+    background-color: #00e096;
+}
+
+.menu_btn
+{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:50px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) ;
+}
+#menu
+{
+    display:none;
+    position:fixed;
+    right:0px;
+    bottom:0px;
+    color:white;
+    font-weight:lighter;
+    text-align:right;
+    z-index: 9999;
+    background-color:#00e096;
+    border-top-left-radius:300px;
+    animation-name: menu_uncollapse;
+    animation-duration: 1.5s;
+    animation-delay: 0;
+}
+
+.is_blurred
+{
+    filter:blur(3px);
+}
+li
+{
+    list-style-type: none;
+    font-size: 25px;
+    margin-bottom:0px;
+    padding:0px;
+}
+ul
+{
+    padding-right:20px;
+    padding-top:70px;
+    padding-left:180px;
+    line-height: 45px;
+    padding-bottom:90px;
+
+}
+#close_btn
+{
+    font-size:110px;
+    font-weight: lighter;
+    position:fixed;
+    bottom:0px;
+    right:20px;
+}
+a
+{
+    text-decoration: none;
+    text-emphasis: none;
+    color: none;
+}
 /* End of common style*/
