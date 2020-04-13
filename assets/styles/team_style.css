@@ -1,3 +1,7 @@
+:root {
+  --color-primary: #17e0a0;
+}
+
 /* ----------- */
 /* Team Header */
 /* ----------- */
@@ -7,6 +11,7 @@
   align-items: center;
 }
 .team-header img {
+  padding-top: 6rem;
   width: 500px;
   height: auto;
 }
@@ -18,7 +23,7 @@
 .team-header p {
   font-size: 1.4rem;
   font-weight: 300;
-  color: #17e0a0;
+  color: var(--color-primary);
   font-style: italic;
 }
 
@@ -32,15 +37,24 @@
   background-color: #000;
   color: #fff;
   height: 40rem;
-  padding: 3rem 0 0 0;
+  padding: 0 6rem;
 }
 .team-footer h2 {
-  font-size: 3.5em;
+  margin: 4rem 0 3rem 0;
+  font-size: 5em;
   font-weight: 700;
+}
+.team-footer p {
+  text-align: center;
+  font-size: 1.5em;
+}
+.team-footer p span {
+  color: var(--color-primary);
 }
 .team-footer h2 sup {
   position: relative;
-  top: -30px;
-  font-size: 1rem;
+  top: -38px;
+  left: -5px;
+  font-size: 1.5rem;
   font-weight: 100;
 }
