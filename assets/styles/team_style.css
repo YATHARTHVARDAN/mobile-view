@@ -1,0 +1,46 @@
+/* ----------- */
+/* Team Header */
+/* ----------- */
+.team-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team-header img {
+  width: 500px;
+  height: auto;
+}
+.team-header h2 {
+  font-size: 3.5em;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.team-header p {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #17e0a0;
+  font-style: italic;
+}
+
+/* ----------- */
+/* Team Footer */
+/* ----------- */
+.team-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  height: 40rem;
+  padding: 3rem 0 0 0;
+}
+.team-footer h2 {
+  font-size: 3.5em;
+  font-weight: 700;
+}
+.team-footer h2 sup {
+  position: relative;
+  top: -30px;
+  font-size: 1rem;
+  font-weight: 100;
+}
