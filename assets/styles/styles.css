@@ -13,6 +13,60 @@
 }
 /*Fonts section end*/
 
+/* Modal */
+.modal {
+  position: absolute;
+  width: 300px !important;
+  margin: 0 !important;
+}
+a.close-modal {
+  position: absolute;
+  padding: 5px !important;
+  width: 42px !important;
+  height: 42px !important;
+  z-index: 2 !important;
+}
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#contact-form h1 {
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+#contact-form input[type="text"] {
+  background-color: #ebebeb;
+  border: none;
+  border-radius: 5rem;
+  padding: 3px 20px;
+  color: #2e2e2e;
+  margin-bottom: 1rem;
+}
+#contact-form button {
+  margin-top: 1rem;
+  color: white;
+  width: 10rem;
+  font-weight: 900;
+  font-size: 20px;
+  box-shadow: 4px 4px #d8d8d8;
+  padding: 10px 20px;
+  background-color: #06ed99;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+#contact-form button:hover {
+  position: relative;
+  top: 4px;
+  left: 4px;
+  box-shadow: none;
+}
+#contact-form button a {
+  color: white;
+  text-decoration: none;
+}
+
 /* Home Page*/
 #Home_Page {
   width: 100%;
@@ -41,11 +95,15 @@
   color: white;
   background-color: #06ed99;
 }
+.green_button:hover {
+  color: white;
+}
 .green_btn {
   font-weight: bold;
   font-size: 90%;
 }
 #mock_up {
+  display: none;
   width: 80%;
   position: absolute;
 }

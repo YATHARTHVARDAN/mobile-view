@@ -16,6 +16,11 @@
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.0/lottie.js'></script>
         <!--End of script for lottie files -->
+        <!-- Jquery-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+        <!-- jQuery Modal -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     </head>
     <body>
         <div id = "Home_Page">
@@ -25,7 +30,22 @@
                 <h3 class="mont fingertips">College at your fingertips</h2>
                 <p class="mont coming">Coming Soon!</p>
             </div>
-            <button class="btn green_button mont"><span class="green_btn">REQUEST INVITE</span></button>
+            <!-- Modal HTML embedded directly into document -->
+            <div id="ex1" class="modal">
+                <p>
+                    <form id="contact-form">
+                        <h1>Contact us!</h1>
+                        <input type="text" placeholder="John Doe"/>
+                        <input type="text" placeholder="johndoe@follege.com"/>
+                        <input type="text" placeholder="University of Internet"/>
+                        <button type="submit"><a href="#" rel="modal:close">Connect!</a></button>
+                    </form>
+                </p>
+                
+            </div>
+            <!-- Link to open the modal -->
+            <p><a href="#ex1" rel="modal:open" class="btn green_button mont"><span class="green_btn">REQUEST INVITE</span></a></p>
+
             <img src="assets/images/Component 33 – 1.png" id="mock_up"/>
         </div>
             <div id="after_fr">
