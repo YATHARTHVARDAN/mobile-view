@@ -118,6 +118,20 @@ var b22 = document.getElementById("block22");
 var b31 = document.getElementById("b31");
 var b32 = document.getElementById("b32");
 
+
+if(isIpad)
+{
+    var animations = document.getElementsByClassName("animation");
+    var texts = document.getElementsByClassName("anim_text");
+    for(k=0;k<animations.length;k++)
+    {
+        var ele = document.getElementById(animations[k].id);
+        ele.style.marginTop="50%";
+        var elet = document.getElementById(texts[k].id);
+        elet.style.marginTop = "50%";
+    }
+}
+
 if(!isMobile)
 {
     after_fr.style.marginTop  = height_of_mock_up + 300 + "px";
