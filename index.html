@@ -18,31 +18,54 @@
         <!--End of script for lottie files -->
     </head>
     <body>
+        <div class="black" id="nav">
+            <div class="row">
+                <div class="col-md-3 col-lg-3">
+                    <img src="assets/images/white text.png" style="width:155px; padding:0px;  padding-left:5px;">
+                </div>
+                <div class="col-md-9 col-lg-9">
+                <ul class="nav_list">
+                    <li><a href="#why_desk"><button onclick="open_mod()" class="btn green_button mont"><span class="green_btn">REQUEST INVITE</span></button></li>
+                        <li><a href="#why_desk"><p class="mont text_white">Community</p></a></li>
+                        <li><a href="Apply"><p class="mont text_white">Internship</p></a></li>
+                        <li><a href="#Team_Page"><p class="mont text_white">Team</p></a></li>
+                        <li><a href="#mobile_contact_desk"><p class="mont text_white">Contact Us</p></a></li>
+                    
+                    </ul>
+                </div>
+            </div>
+        </div>
+
         <div onclick="close_menu()" id = "Home_Page" class="">
             <div id="fr">
-                <img src="assets/images/white text transparent back logo.png" class="head_logo"/>
+                <img src="assets/images/white text.png" class="head_logo" id="head_logo"/>
+                <!-- <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_oMcKEv.json" background="transparent" scale ="3" speed="1" style="width:80%; height:50%; font-size: larger;" loop autoplay></lottie-player> -->
             <div>
-                <h3 class="mont fingertips">College at your fingertips</h2>
+                <h3 class="mont fingertips">College at your fingertips</h3>
                 <p class="mont coming">Coming Soon!</p>
             </div>
-            <button class="btn green_button mont"><span class="green_btn">REQUEST INVITE</span></button>
+            <button onclick="open_mod()" class="btn green_button mont"><span class="green_btn">REQUEST INVITE</span></button>
             <img src="assets/images/Component 33 – 1.png" id="mock_up"/>
         </div>
             <div id="after_fr">
                 <h2 id="top_heading" class="mont header_black">Introducing The Follege Social App</h2>
                 <br>
                 <div class = "anim_section white">
-                    <div class="animation">
-                        <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_3p3LG9.json"  background="transparent"  speed="1"  style="width: 80%;"  loop autoplay ></lottie-player>
-                    </div>
-                    <div class="anim_text">
-                        <h4 class="mont anim_heading text_black">Removing the Clutter from the Social</h4>
-                        <p class="mont anim_subtext text_black">No BS, nothing Scattered,</p>
-                        <p class="mont anim_subtext text_black">Find Everyting and Anything</p>
-                        <p class="mont anim_subtext text_black">relevant to your college life here</p>
+                    <div class="container">
+                        <div class="row">
+                            <div class="animation col-12 col-xs-12 col-md-6 col-lg-6">
+                                <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_3p3LG9.json"  background="transparent"  speed="1"  style="width: 80%;"  loop autoplay ></lottie-player>
+                            </div>
+                            <div class="anim_text col-12 col-xs-12 col-md-6 col-lg-6">
+                                <h4 class="mont anim_heading text_black">Removing the Clutter from the Social</h4>
+                                <p class="mont anim_subtext text_black">No BS, nothing Scattered,</p>
+                                <p class="mont anim_subtext text_black">Find Everyting and Anything</p>
+                                <p class="mont anim_subtext text_black">relevant to your college life here</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class = "anim_section black">
+                <div class = "anim_section black" id="block11">
                     <div class="animation">
                         <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_sU4ydN.json"  background="transparent"  speed="1"  style="width: 80%;"  loop autoplay ></lottie-player>
                     </div>
@@ -53,29 +76,510 @@
                         <p class="mont anim_subtext text_white">Express and Explore</p>
                     </div>
                 </div>
-                <div class = "anim_section white">
-                    <div class="animation">
-                        <lottie-player src="https://assets3.lottiefiles.com/datafiles/iMAIoaSAs29w2xR/data.json"  background="transparent"  speed="1"  style="width: 80%;"  loop autoplay ></lottie-player>
-                    </div>
-                    <div class="anim_text">
-                        <h4 class="mont anim_heading text_black">#byeFOMO</h4>
-                        <p class="mont anim_subtext text_black">College life is a Plethora of</p>
-                        <p class="mont anim_subtext text_black">Opportunities only if one is Aware</p>
-                        <p class="mont anim_subtext text_black">Never miss out anything with follege</p>
-                    </div>
-                </div>
-                <div class = "anim_section black">
-                    <div class="animation">
-                        <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_3SA6yI.json"  background="transparent"  speed="1"  style="width: 80%;"  loop autoplay ></lottie-player>
-                    </div>
-                    <div class="anim_text">
-                        <h4 class="mont anim_heading text_white">Network And Explore</h4>
-                        <p class="mont anim_subtext text_white">Find like minded people, Connect to</p>
-                        <p class="mont anim_subtext text_white">Alumni, Join Communities</p>
-                        <p class="mont anim_subtext text_white">Leverage the college life to its full</p>
-                        <p class="mont anim_subtext text_white">potential</p>
+                <div class = "anim_section black" id="block12">
+                    <div class="container">
+                        <div class="row">
+                            <div class="anim_text col-12 col-xs-12 col-md-6 col-lg-6">
+                                <h4 class="mont anim_heading text_white">Your Sense Of Belonging</h4>
+                                <p class="mont anim_subtext text_white">Show your True Self</p>
+                                <p class="mont anim_subtext text_white">No One here to judge!</p>
+                                <p class="mont anim_subtext text_white">Express and Explore</p>
+                            </div>
+                            <div class="animation col-12 col-xs-12 col-md-6 col-lg-6">
+                                <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_sU4ydN.json"  background="transparent"  speed="1"  style="width: 80%;"  loop autoplay ></lottie-player>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <div class="anim_section white">
+                <div class="container">
+                    <div class="row">
+                        <div class="animation col-12 col-xs-12 col-md-6 col-lg-6">
+                            <lottie-player src="https://assets3.lottiefiles.com/datafiles/iMAIoaSAs29w2xR/data.json"  background="transparent"  speed="1"  style="width: 80%;"  loop autoplay ></lottie-player>
+                        </div>
+                        <div class="anim_text  col-12 col-xs-12 col-md-6 col-lg-6">
+                            <h4 class="mont anim_heading text_black">#byeFOMO</h4>
+                            <p class="mont anim_subtext text_black">College life is a Plethora of</p>
+                            <p class="mont anim_subtext text_black">Opportunities only if one is Aware</p>
+                            <p class="mont anim_subtext text_black">Never miss out anything with follege</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class = "anim_section black" id="block21">
+                    <div class="container">
+                        <div class="row">
+                            <div class="animation col-12 col-xs-12 col-md-6 col-lg-6">
+                                <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_3SA6yI.json"  background="transparent"  speed="1"  style="width: 80%;"  loop autoplay ></lottie-player>
+                            </div>
+                            <div class="anim_text col-12 col-xs-12 col-md-6 col-lg-6">
+                                <h4 class="mont anim_heading text_white">Network And Explore</h4>
+                                <p class="mont anim_subtext text_white">Find like minded people, Connect to</p>
+                                <p class="mont anim_subtext text_white">Alumni, Join Communities</p>
+                                <p class="mont anim_subtext text_white">Leverage the college life to its full</p>
+                                <p class="mont anim_subtext text_white">potential</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class = "anim_section black" id="block22">
+                    <div class="container">
+                        <div class="row">
+                            <div class="anim_text col-12 col-xs-12 col-md-6 col-lg-6">
+                                <h4 class="mont anim_heading text_white">Network And Explore</h4>
+                                <p class="mont anim_subtext text_white">Find like minded people, Connect to</p>
+                                <p class="mont anim_subtext text_white">Alumni, Join Communities</p>
+                                <p class="mont anim_subtext text_white">Leverage the college life to its full</p>
+                                <p class="mont anim_subtext text_white">potential</p>
+                            </div>
+                            <div class="animation col-12 col-xs-12 col-md-6 col-lg-6">
+                                <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_3SA6yI.json"  background="transparent"  speed="1"  style="width: 80%;"  loop autoplay ></lottie-player>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </div>
+                <div onclick="close_menu()" id="Team_Page">
+                    <!-- Header -->
+                    <div class="team-header" id="not_for_desk">
+                      <img src="assets/images/black text.png" class="head_logo"/>     
+                    </div>
+                    <div class="Team_cards white">
+                    <h2 class="mont text_black anim_heading meet">Meet the team!</h2>
+                      <p class="mont text_green party"><span style="font-style: italic;">We work hard and Party harder!</span></p>
+                    <div class="cards white">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-xs-12 col-md-4 col-lg-4">
+                                    <div class="front_card" id="f_c1">
+                                        <div class="row">
+                                            <div class="col-5 col-xs-5 col-md-5 col-lg-5" style="padding-left: 1px; padding-right:0px;">
+                                                <img src="assets/team_images/abhinav.jpeg" class="card_image">
+                                            </div>
+                                            <div class="col-7 col-xs-7 col-md-7 col-lg-7" style="padding-left: 1px; padding-right:0px;">
+                                                <h4 class="card_h4 text_black mont no_change">Abhinav Singh</h4>
+                                                <h5 class="text_black card_h5 mont no_change">CEO, Founder</h5>
+                                                <p class="team_type mont text_white no_change">Team</p>
+                                            </div>
+                                        </div>
+                                        <img src="assets/images/swap.png" onclick = "flip(0)" class="swap" style="width:25px; position:absolute; right:40px; bottom:30px;">
+                                    </div>
+                                    <div class="back_card" id="b_c1">
+                                        <div class="row">
+                                            <div class="col-3 col-xs-3 col-md-3 col-lg-3">
+                                                <img src="assets/images/in.png" class="in_logo">
+                                            </div>
+                                            <div class="col-9 col-xs-9 col-md-9 col-lg-9">
+                                                <div class="back_text white">
+                                                    <p class="mont text_black">Chief Party Officer at Follege. Believes in lean startup, transparency and hustle. Love cats and tech. A sophomore with a vision to disrupt the college ecosystem!</p>
+                                                </div>
+                                            </div>
+                                            <img src="assets/images/swap.png" onclick="flip_back(0)" class="cancel" style=" position:absolute; left:40px; bottom:30px;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-xs-12 col-md-4 col-lg-4">
+                                    <div class="front_card" id="f_c2">
+                                        <div class="row">
+                                            <div class="col-5 col-xs-5 col-md-5 col-lg-5" style="padding-left: 1px; padding-right:0px;">
+                                                <img src="assets/team_images/Arindam.jpg" class="card_image">
+                                            </div>
+                                            <div class="col-7 col-xs-7 col-md-7 col-lg-7" style="padding-left: 1px; padding-right:0px;">
+                                                <h4 class="card_h4 text_black mont no_change">Arindam Nath</h4>
+                                                <h5 class="text_black card_h5 mont no_change">Product Mentor</h5>
+                                                <p class="team_type mont text_white no_change">Team</p>
+                                            </div>
+                                        </div>
+                                        <img src="assets/images/swap.png"  onclick = "flip(1)" class="swap" style="width:25px; position:absolute; right:40px; bottom:30px;">
+                                    </div>
+                                    <div class="back_card" id="b_c2">
+                                        <div class="row">
+                                            <div class="col-3 col-xs-3 col-md-3 col-lg-3">
+                                                <img src="assets/images/in.png" class="in_logo">
+                                            </div>
+                                            <div class="col-9 col-xs-9 col-md-9 col-lg-9">
+                                                <div class="back_text white">
+                                                    <p class="mont text_black">Meet Arindam, he is mentoring follege to be a digital product company. He has worked in Product domain across multiple industries since the past 5 years and have built multiple products. He is really excited about new technologies and always up for brainstorming about problems. Besides building products he is also an amateur travel blogger, musician, photographer and filmmaker.</p>
+                                                </div>
+                                            </div>
+                                            <img src="assets/images/swap.png" onclick="flip_back(1)" class="cancel" style=" position:absolute; left:40px; bottom:30px;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-xs-12 col-md-4 col-lg-4">
+                                    <div class="front_card" id="f_c3">
+                                        <div class="row">
+                                            <div class="col-5 col-xs-5 col-md-5 col-lg-5" style="padding-left: 1px; padding-right:0px;">
+                                                <img src="assets/team_images/Aman.jpg" class="card_image">
+                                            </div>
+                                            <div class="col-7 col-xs-7 col-md-7 col-lg-7" style="padding-left: 1px; padding-right:0px;">
+                                                <h4 class="card_h4 text_black mont no_change">Aman</h4>
+                                                <h5 class="text_black card_h5 mont no_change">CTO</h5>
+                                                <p class="team_type mont text_white no_change">Team</p>
+                                            </div>
+                                        </div>
+                                        <img src="assets/images/swap.png"  onclick = "flip(2)" class="swap" style="width:25px; position:absolute; right:40px; bottom:30px;">
+                                    </div>
+                                    <div class="back_card" id="b_c3">
+                                        <div class="row">
+                                            <div class="col-3 col-xs-3 col-md-3 col-lg-3">
+                                                <img src="assets/images/in.png" class="in_logo">
+                                            </div>
+                                            <div class="col-9 col-xs-9 col-md-9 col-lg-9">
+                                                <div class="back_text white">
+                                                    <p class="mont text_black">Meet Aman, the code guy of our organization. He is good at exploring the codes and experimenting with new techniques for software development. He had interned at DRDO and Goibibo as a software engineer. Aman will always be the C level geek of our organization inserting Codes with a mug of Coffee and Cookies.</p>
+                                                </div>
+                                            </div>
+                                            <img src="assets/images/swap.png" onclick="flip_back(2)" class="cancel" style=" position:absolute; left:40px; bottom:30px;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-xs-12 col-md-4 col-lg-4">
+                                    <div class="front_card" id="f_c4">
+                                        <div class="row">
+                                            <div class="col-5 col-xs-5 col-md-5 col-lg-5" style="padding-left: 1px; padding-right:0px;">
+                                                <img src="assets/team_images/Aditya Verma.jpg" class="card_image">
+                                            </div>
+                                            <div class="col-7 col-xs-7 col-md-7 col-lg-7" style="padding-left: 1px; padding-right:0px;">
+                                                <h4 class="card_h4 text_black mont no_change">Aditya Verma</h4>
+                                                <h5 class="text_black card_h5 mont no_change">COO</h5>
+                                                <p class="team_type mont text_white no_change">Team</p>
+                                            </div>
+                                        </div>
+                                        <img src="assets/images/swap.png"  onclick = "flip(3)" class="swap" style="width:25px; position:absolute; right:40px; bottom:30px;">
+                                    </div>
+                                    <div class="back_card" id="b_c4">
+                                        <div class="row">
+                                            <div class="col-3 col-xs-3 col-md-3 col-lg-3">
+                                                <img src="assets/images/in.png" class="in_logo">
+                                            </div>
+                                            <div class="col-9 col-xs-9 col-md-9 col-lg-9">
+                                                <div class="back_text white">
+                                                    <p class="mont text_black"> Meet Aditya Verma, A Design enthusiast who loves Blogging. In his free time, he likes to write, travel and test his photography skills.</p>
+                                                </div>
+                                            </div>
+                                            <img src="assets/images/swap.png" onclick="flip_back(3)" class="cancel" style=" position:absolute; left:40px; bottom:30px;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-xs-12 col-md-4 col-lg-4">
+                                    <div class="front_card" id="f_c5">
+                                        <div class="row">
+                                            <div class="col-5 col-xs-5 col-md-5 col-lg-5" style="padding-left: 1px; padding-right:0px;">
+                                                <img src="assets/team_images/Yatharth.jpg" class="card_image">
+                                            </div>
+                                            <div class="col-7 col-xs-7 col-md-7 col-lg-7" style="padding-left: 1px; padding-right:0px;">
+                                                <h4 class="card_h4 text_black mont no_change">Yatharth Vardan</h4>
+                                                <h5 class="text_black card_h5 mont no_change">Head of Engineering</h5>
+                                                <p class="team_type mont text_white no_change">Team</p>
+                                            </div>
+                                        </div>
+                                        <img src="assets/images/swap.png"  onclick = "flip(4)" class="swap" style="width:25px; position:absolute; right:40px; bottom:30px;">
+                                    </div>
+                                    <div class="back_card" id="b_c5">
+                                        <div class="row">
+                                            <div class="col-3 col-xs-3 col-md-3 col-lg-3">
+                                                <img src="assets/images/in.png" class="in_logo">
+                                            </div>
+                                            <div class="col-9 col-xs-9 col-md-9 col-lg-9">
+                                                <div class="back_text white">
+                                                    <p class="mont text_black">Meet Yatharth Vardan, a football freak, does frontend at its best , an all in one full stack Web developer. A unique H&S worker.</p>
+                                                </div>
+                                            </div>
+                                            <img src="assets/images/swap.png" onclick="flip_back(4)" class="cancel" style=" position:absolute; left:40px; bottom:30px;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-xs-12 col-md-4 col-lg-4">
+                                    <div class="front_card" id="f_c6">
+                                        <div class="row">
+                                            <div class="col-5 col-xs-5 col-md-5 col-lg-5" style="padding-left: 1px; padding-right:0px;">
+                                                <img src="assets/team_images/Dhananjay.jpg" class="card_image">
+                                            </div>
+                                            <div class="col-7 col-xs-7 col-md-7 col-lg-7" style="padding-left: 1px; padding-right:0px;">
+                                                <h4 class="card_h4 text_black mont no_change">Dhananjay Deshwal</h4>
+                                                <h5 class="text_black card_h5 mont no_change">App Dev Head</h5>
+                                                <p class="team_type mont text_white no_change">Team</p>
+                                            </div>
+                                        </div>
+                                        <img src="assets/images/swap.png"  onclick = "flip(5)" class="swap" style="width:25px; position:absolute; right:40px; bottom:30px;">
+                                    </div>
+                                    <div class="back_card" id="b_c6">
+                                        <div class="row">
+                                            <div class="col-3 col-xs-3 col-md-3 col-lg-3">
+                                                <img src="assets/images/in.png" class="in_logo">
+                                            </div>
+                                            <div class="col-9 col-xs-9 col-md-9 col-lg-9">
+                                                <div class="back_text white">
+                                                    <p class="mont text_black"> Meet Dhananjay, a very passionate learner and coding enthusiast. Competitive programming and app development are integral part of his life. He may not have a solution to every problem but he very well knows how to approach a problem and then solve it from scratch. The moto of his life is to be a good human being and to make himself useful for the universe (or the multiverse, if it exists) with all his tech skills.</p>
+                                                </div>
+                                            </div>
+                                            <img src="assets/images/swap.png" onclick="flip_back(5)" class="cancel" style=" position:absolute; left:40px; bottom:30px;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-xs-12 col-md-4 col-lg-4">
+                                    <div class="front_card" id="f_c7">
+                                        <div class="row">
+                                            <div class="col-5 col-xs-5 col-md-5 col-lg-5" style="padding-left: 1px; padding-right:0px;">
+                                                <img src="assets/team_images/Aaron.jpg" class="card_image">
+                                            </div>
+                                            <div class="col-7 col-xs-7 col-md-7 col-lg-7" style="padding-left: 1px; padding-right:0px;">
+                                                <h4 class="card_h4 text_black mont no_change">Aaron Paul Jacob</h4>
+                                                <h5 class="text_black card_h5 mont no_change">App Dev Head</h5>
+                                                <p class="team_type mont text_white no_change">Team</p>
+                                            </div>
+                                        </div>
+                                        <img src="assets/images/swap.png"   onclick = "flip(6)"class="swap" style="width:25px; position:absolute; right:40px; bottom:30px;">
+                                    </div>
+                                    <div class="back_card" id="b_c7">
+                                        <div class="row">
+                                            <div class="col-3 col-xs-3 col-md-3 col-lg-3">
+                                                <img src="assets/images/in.png" class="in_logo">
+                                            </div>
+                                            <div class="col-9 col-xs-9 col-md-9 col-lg-9">
+                                                <div class="back_text white">
+                                                    <p class="mont text_black"> Pursuing Software Engineering from DTU, Aaron, is a passionate coder and developer.
+                                                        He is currently managing the App development here at follege</p>
+                                                </div>
+                                            </div>
+                                            <img src="assets/images/swap.png" onclick="flip_back(6)" class="cancel" style=" position:absolute; left:40px; bottom:30px;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-xs-12 col-md-4 col-lg-4">
+                                    <div class="front_card" id="f_c8">
+                                        <div class="row">
+                                            <div class="col-5 col-xs-5 col-md-5 col-lg-5" style="padding-left: 1px; padding-right:0px;">
+                                                <img src="assets/team_images/Isha.png" class="card_image">
+                                            </div>
+                                            <div class="col-7 col-xs-7 col-md-7 col-lg-7" style="padding-left: 1px; padding-right:0px;">
+                                                <h4 class="card_h4 text_black mont no_change">Isha Anand</h4>
+                                                <h5 class="text_black card_h5 mont no_change">Content and Strategy</h5>
+                                                <p class="team_type mont text_white no_change">Team</p>
+                                            </div>
+                                        </div>
+                                        <img src="assets/images/swap.png"  onclick = "flip(7)" class="swap" style="width:25px; position:absolute; right:40px; bottom:30px;">
+                                    </div>
+                                    <div class="back_card" id="b_c8">
+                                        <div class="row">
+                                            <div class="col-3 col-xs-3 col-md-3 col-lg-3">
+                                                <img src="assets/images/in.png" class="in_logo">
+                                            </div>
+                                            <div class="col-9 col-xs-9 col-md-9 col-lg-9">
+                                                <div class="back_text white">
+                                                    <p class="mont text_black">A management student who is also a huge Grammar Nazi. Skilled in content writing, on ground marketing and event management. To escape my problems, I seek retail therapy. Love books and coffee</p>
+                                                </div>
+                                            </div>
+                                            <img src="assets/images/swap.png" onclick="flip_back(7)" class="cancel" style=" position:absolute; left:40px; bottom:30px;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-xs-12 col-md-4 col-lg-4">
+                                    <div class="front_card" id="f_c9">
+                                        <div class="row">
+                                            <div class="col-5 col-xs-5 col-md-5 col-lg-5" style="padding-left: 1px; padding-right:0px;">
+                                                <img src="assets/team_images/Pulkit.jpg" class="card_image">
+                                            </div>
+                                            <div class="col-7 col-xs-7 col-md-7 col-lg-7" style="padding-left: 1px; padding-right:0px;">
+                                                <h4 class="card_h4 text_black mont no_change">Pulkit Singh</h4>
+                                                <h5 class="text_black card_h5 mont no_change">Marketing Head</h5>
+                                                <p class="team_type mont text_white no_change">Team</p>
+                                            </div>
+                                        </div>
+                                        <img src="assets/images/swap.png"  onclick = "flip(8)" class="swap" style="width:25px; position:absolute; right:40px; bottom:30px;">
+                                    </div>
+                                    <div class="back_card" id="b_c9">
+                                        <div class="row">
+                                            <div class="col-3 col-xs-3 col-md-3 col-lg-3">
+                                                <img src="assets/images/in.png" class="in_logo">
+                                            </div>
+                                            <div class="col-9 col-xs-9 col-md-9 col-lg-9">
+                                                <div class="back_text white">
+                                                    <p class="mont text_black">Marketing and design guy at follege. Has worked under various social media handles & website as a social media manager and design head. Also has experience in search engine optimization and keyword research. A finance enthusiast who loves to design , learn and grow.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img src="assets/images/swap.png" onclick="flip_back(8)" class="cancel" style=" position:absolute; left:40px; bottom:30px;">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-xs-12 col-md-4 col-lg-4">
+                                    <div class="front_card" id="f_c10">
+                                        <div class="row">
+                                            <div class="col-5 col-xs-5 col-md-5 col-lg-5" style="padding-left: 1px; padding-right:0px;">
+                                                <img src="assets/team_images/Aditya.jpeg" class="card_image">
+                                            </div>
+                                            <div class="col-7 col-xs-7 col-md-7 col-lg-7" style="padding-left: 1px; padding-right:0px;">
+                                                <h4 class="card_h4 text_black mont no_change">Aditya Kumar</h4>
+                                                <h5 class="text_black card_h5 mont no_change">Video and Media</h5>
+                                                <p class="team_type mont text_white no_change">Team</p>
+                                            </div>
+                                        </div>
+                                        <img src="assets/images/swap.png"  onclick = "flip(9)" class="swap" style="width:25px; position:absolute; right:40px; bottom:30px;">
+                                    </div>
+                                    <div class="back_card" id="b_c10">
+                                        <div class="row">
+                                            <div class="col-3 col-xs-3 col-md-3 col-lg-3">
+                                                <img src="assets/images/in.png" class="in_logo">
+                                            </div>
+                                            <div class="col-9 col-xs-9 col-md-9 col-lg-9">
+                                                <div class="back_text white">
+                                                    <p class="mont text_black">Meet Aditya Kumar, the media and marketing guy at follege. He has skills in C++, Photography, Videography, Video Editing and Digital Marketing. He has experience of working under various social media handles as a social media manager. He has also started his own production team and curates cinematic commercials for various brands.  He has a dream of becoming a successful filmmaker one day.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img src="assets/images/swap.png" onclick="flip_back(9)" class="cancel" style=" position:absolute; left:40px; bottom:30px;">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-xs-12 col-md-4 col-lg-4">
+                                    <div class="front_card" id="f_c11">
+                                        <div class="row">
+                                            <div class="col-5 col-xs-5 col-md-5 col-lg-5" style="padding-left: 1px; padding-right:0px;">
+                                                <img src="assets/team_images/Abhishek.jpg" class="card_image">
+                                            </div>
+                                            <div class="col-7 col-xs-7 col-md-7 col-lg-7" style="padding-left: 1px; padding-right:0px;">
+                                                <h4 class="card_h4 text_black mont no_change">Abhishek Aryan</h4>
+                                                <h5 class="text_black card_h5 mont no_change">Tech R&D</h5>
+                                                <p class="team_type mont text_white no_change">Team</p>
+                                            </div>
+                                        </div>
+                                        <img src="assets/images/swap.png"  onclick = "flip(10)" class="swap" style="width:25px; position:absolute; right:40px; bottom:30px;">
+                                    </div>
+                                    <div class="back_card" id="b_c11">
+                                        <div class="row">
+                                            <div class="col-3 col-xs-3 col-md-3 col-lg-3">
+                                                <img src="assets/images/in.png" class="in_logo">
+                                            </div>
+                                            <div class="col-9 col-xs-9 col-md-9 col-lg-9">
+                                                <div class="back_text white">
+                                                    <p class="mont text_black"></p>
+                                                </div>
+                                            </div>
+                                            <img src="assets/images/swap.png" onclick="flip_back(10)" class="cancel" style=" position:absolute; left:40px; bottom:30px;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-xs-12 col-md-4 col-lg-4">
+                                    <div class="front_card" id="f_c12">
+                                        <div class="row">
+                                            <div class="col-5 col-xs-5 col-md-5 col-lg-5" style="padding-left: 1px; padding-right:0px;">
+                                                <img src="assets/team_images/Seher.jpg" class="card_image">
+                                            </div>
+                                            <div class="col-7 col-xs-7 col-md-7 col-lg-7" style="padding-left: 1px; padding-right:0px;">
+                                                <h4 class="card_h4 text_black mont no_change">Seher</h4>
+                                                <h5 class="text_black card_h5 mont no_change">Product Associate</h5>
+                                                <p class="team_type mont text_white no_change">Team</p>
+                                            </div>
+                                        </div>
+                                        <img src="assets/images/swap.png"  onclick = "flip(11)" class="swap" style="width:25px; position:absolute; right:40px; bottom:30px;">
+                                    </div>
+                                    <div class="back_card" id="b_c12">
+                                        <div class="row">
+                                            <div class="col-3 col-xs-3 col-md-3 col-lg-3">
+                                                <img src="assets/images/in.png" class="in_logo">
+                                            </div>
+                                            <div class="col-9 col-xs-9 col-md-9 col-lg-9">
+                                                <div class="back_text white">
+                                                    <p class="mont text_black">A Strategic Marketer and a Brand Enthusiast now leaning into Product Management: A wholesome package catering to my insatiable appetite to Create, Experiment and Learn. Solving new consumer problems is what gets my Adrenaline Rushing. I love networking, Let's connect over Butter Chicken!.</p>
+                                                </div>
+                                            </div>
+                                            <img src="assets/images/swap.png" onclick="flip_back(11)" class="cancel" style=" position:absolute; left:40px; bottom:30px;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-xs-12 col-md-4 col-lg-4">
+                                    <div class="front_card" id="f_c13">
+                                        <div class="row">
+                                            <div class="col-5 col-xs-5 col-md-5 col-lg-5" style="padding-left: 1px; padding-right:0px;">
+                                                <img src="assets/team_images/Paras.png" class="card_image">
+                                            </div>
+                                            <div class="col-7 col-xs-7 col-md-7 col-lg-7" style="padding-left: 1px; padding-right:0px;">
+                                                <h4 class="card_h4 text_black mont no_change">Paras Goel</h4>
+                                                <h5 class="text_black card_h5 mont no_change">Finance Head</h5>
+                                                <p class="team_type mont text_white no_change">Team</p>
+                                            </div>
+                                        </div>
+                                        <img src="assets/images/swap.png"  onclick = "flip(12)" class="swap" style="width:25px; position:absolute; right:40px; bottom:30px;">
+                                    </div>
+                                    <div class="back_card" id="b_c13">
+                                        <div class="row">
+                                            <div class="col-3 col-xs-3 col-md-3 col-lg-3">
+                                                <img src="assets/images/in.png" class="in_logo">
+                                            </div>
+                                            <div class="col-9 col-xs-9 col-md-9 col-lg-9">
+                                                <div class="back_text white">
+                                                    <p class="mont text_black">While we all are focused to give you best service in lowest prices plausible, this guy specializes in employing Money to make more Money. Decoding the principles of Financial Management, he is there to keep the company efficiently fueled up with optimum Finances at all the time.</p>
+                                                </div>
+                                            </div>
+                                            <img src="assets/images/swap.png" onclick="flip_back(12)" class="cancel" style=" position:absolute; left:40px; bottom:30px;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-xs-12 col-md-4 col-lg-4">
+                                    <div class="front_card" id="f_c14">
+                                        <div class="row">
+                                            <div class="col-5 col-xs-5 col-md-5 col-lg-5" style="padding-left: 1px; padding-right:0px;">
+                                                <img src="assets/team_images/Rachit.png" class="card_image">
+                                            </div>
+                                            <div class="col-7 col-xs-7 col-md-7 col-lg-7" style="padding-left: 1px; padding-right:0px;">
+                                                <h4 class="card_h4 text_black mont no_change">Rachit</h4>
+                                                <h5 class="text_black card_h5 mont no_change">Software Dev</h5>
+                                                <p class="team_type mont text_white no_change">Intern</p>
+                                            </div>
+                                        </div>
+                                        <img src="assets/images/swap.png"  onclick = "flip(13)" class="swap" style="width:25px; position:absolute; right:40px; bottom:30px;">
+                                    </div>
+                                    <div class="back_card" id="b_c14">
+                                        <div class="row">
+                                            <div class="col-3 col-xs-3 col-md-3 col-lg-3">
+                                                <img src="assets/images/in.png" class="in_logo">
+                                            </div>
+                                            <div class="col-9 col-xs-9 col-md-9 col-lg-9">
+                                                <div class="back_text white">
+                                                    <p class="mont text_black">Meet Rachit, he is the one who codes. Pursuing his bachelor degree and doing a software developer intern in Grofers, he has joined Follege as a full stack developer.</p>
+                                                </div>
+                                            </div>
+                                            <img src="assets/images/swap.png" onclick="flip_back(13)" class="cancel" style=" position:absolute; left:40px; bottom:30px;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-xs-12 col-md-4 col-lg-4">
+                                    <div class="front_card" id="f_c15">
+                                        <div class="row">
+                                            <div class="col-5 col-xs-5 col-md-5 col-lg-5" style="padding-left: 1px; padding-right:0px;">
+                                                <img src="assets/team_images/Ayush.jpeg" class="card_image">
+                                            </div>
+                                            <div class="col-7 col-xs-7 col-md-7 col-lg-7" style="padding-left: 1px; padding-right:0px;">
+                                                <h4 class="card_h4 text_black mont no_change">Ayush Pahari</h4>
+                                                <h5 class="text_black card_h5 mont no_change">SDE Intern</h5>
+                                                <p class="team_type mont text_white no_change">Intern</p>
+                                            </div>
+                                            <img src="assets/images/swap.png" onclick="flip(14)" class="swap" style="width:25px; position:absolute; right:40px; bottom:30px;">
+                                        </div>
+
+                                    </div>
+                                    <div class="back_card" id="b_c15">
+                                        <div class="row">
+                                            <div class="col-3 col-xs-3 col-md-3 col-lg-3">
+                                                <img src="assets/images/in.png" class="in_logo">
+                                            </div>
+                                            <div class="col-9 col-xs-9 col-md-9 col-lg-9">
+                                                <div class="back_text white">
+                                                    <p class="mont text_black">Ayush is a Web Developer with 1 year of experience in designing and developing user interfaces, testing, debugging and training peers within Web technologies, he has joined Follege as a full stack developer.</p>
+                                                </div>
+                                            </div>
+                                            <img src="assets/images/swap.png" onclick="flip_back(14)" class="cancel" style=" position:absolute; left:40px; bottom:30px;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div onclick="close_menu()" id="home_page_fr">
+                <div id="after_fr_fr">
                 <div class="white why" id="why">
                     <h4 class="mont why_heading text_black">Why Follege?</h4>
                     <p class="mont why_para text_black">"We all know that college is the time for networking and exploration , but despute that the harsh reality is like we don't even know about our own classmates, let alone the other college students.</p>
@@ -84,45 +588,67 @@
                     <p class="mont why_para text_black">College is as an environment need a better platform and we at follege aims to become a sense of belongingness for every student"</p>
                 </div>
 
-                <div class="whatsapp black">
+                <div class="black why_desk" id="why_desk">
+                    <h4 class="mont why_heading_desk text_white">Why Follege?</h4>
+                    <p class="mont why_para_desk text_white">"We all know that college is the time for networking and exploration , but despute that the harsh reality is like we don't even know about our own classmates, let alone the other college students.</p>
+                    <p class="mont why_para_desk text_white">Also ,in a country like INDIA where the education infrastructure is not strong , there is a huge gap between students and administration.</p>
+                    <p class="mont why_para_desk text_white">And these big social platforms like FB-Instagram,they are nothing but a sea of information , due to which 60-70% of important information is often missed out!</p>
+                    <p class="mont why_para_desk text_white">College is as an environment need a better platform and we at follege aims to become a sense of belongingness for every student"</p>
+                </div>
+
+                <div class="whatsapp black" id="whatsapp">
                     <h4 class="mont whatsapp_heading text_white">Join Our Whatsapp Community</h4>
                     <p class="mont text_white" style="margin-bottom:10%;">(Try other link if the group is full)</p>
                     <button class="whatsapp_btn">Link 1</button><br><br>
                     <button class="whatsapp_btn">Link 2</button>
                 </div>
+
+                <div class="whatsapp_desk white" id="whatsapp_desk">
+                    <h4 class="mont whatsapp_heading_desk text_black">Join Our Whatsapp Community</h4>
+                    <p class="mont text_black" style="margin-bottom:4%;">(Try other link if the group is full)</p>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <button class="whatsapp_btn_desk">Link 1</button>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <button class="whatsapp_btn_desk">Link 2</button>        
+                        </div>
+                    </div>
+                    
+                </div>
+
+
                 <div class="mobile_contact" id="mobile_contact">
                     <h4 class="mont whatsapp_heading text_black">Contact Us!</h4>
                     <p class="mont text_black">Drop us a line!</p>
                     <form id="mobile_form">
-                        <input type="text" id="name" placeholder="Name"  class="mont text_black"/>
-                        <input type="email" id="email" placeholder = "Email"  required class="mont ext_black"/>
-                        <textarea class="mont text_black" placeholder="Comment" value="comment"></textarea>
-                        <input id = "submit" type="submit" value="SEND">
+                        <input type="text" id="name" class="name_mob"  placeholder="Name"  class="mont text_black"/>
+                        <input type="email" id="email" class="email_mob" placeholder = "Email"  required class="mont ext_black"/>
+                        <textarea class="mont text_black ta_mob"  placeholder="Comment" value="comment"></textarea>
+                        <input id = "submit" class="submit_mob" type="submit" value="SEND">
+                    </form>
+                </div>
+                <div class="mobile_contact_desk black" id="mobile_contact_desk">
+                    <h4 class="mont whatsapp_heading_desk text_white">Contact Us!</h4>
+                    <p class="mont text_white">Drop us a line!</p>
+                    <form id="mobile_form">
+                        <input type="text" id="name" class="name" placeholder="Name"  class="mont text_black"/>
+                        <input type="email" id="email" class="email" placeholder = "Email"  required class="mont ext_black"/>
+                        <textarea class="mont text_black ta_desk" placeholder="Comment" value="comment"></textarea>
+                        <input id = "submit" class="submit_desk" type="submit" value="SEND">
                     </form>
                 </div>
             </div>
-            <div class="bottom black" style="position: static; bottom: 0px;">
-                <h4 class="alegreya text_white">follege<sup style="font-size:60%;">TM</sup></h4> 
-                <p class="mont bottom_para text_white">for college students who want to leverage college life to its full potential, follege is a student only social platform that connects college students across the globe, unlike Facebook, Instagram or Whatsapp, it provides sudents access to personalisez content, career opportunities, and an official platform to stay connected with college administration and alumni.</p>
-                <p class="mont bottom_copy text_white">Copyright &copy; 2020 follege - All Rights Reserved</p>
-                <p class="mont bottom_copy text_white">New Delhi, India</p>
-                <p class="last_green bottom_para">hello@follege.com</p>
-            </div>
         </div>
+        <!--End section-->
+        <div class="bottom_desk white" id="bottom_desk">
+            <h4 class="alegreya text_black"><span style="font-weight:bolder;">follege</span><sup style="font-size:60%;">TM</sup></h4>
+            <p class="mont bottom_para_desk text_black">for college students who want to leverage college life to its full potential, follege is a student only social platform that connects college students across the globe, unlike Facebook, Instagram or Whatsapp, it provides sudents access to personalisez content, career opportunities, and an official platform to stay connected with college administration and alumni.</p>
+        </div>
+        <!--End section for desk-->
 
-      <div onclick="close_menu()" id="Team_Page">
-      <!-- Header -->
-      <div class="team-header">
-        <img src="assets/images/black text transparent back follege logo.png" class="head_logo"/>     
-           <h2 class="mont text_black anim_heading meet">Meet the team!</h2>
-        <p class="mont text_green party">We work hard and Party harder!</p>
-      </div>
-      <!-- Card -->
-      <div class="card"></div>
-      <!-- End Card -->
-
-      <!-- Footer -->
-      <div class="bottom black" style="position: static; bottom: 0px;">
+     <!-- Footer for mobile -->
+     <div class="bottom black" id="footer" style="position: static; bottom: 0px; text-align: center;">
         <h4 class="alegreya text_white">follege<sup style="font-size:60%;">TM</sup></h4> 
         <p class="mont bottom_para text_white">for college students who want to leverage college life to its full potential, follege is a student only social platform that connects college students across the globe, unlike Facebook, Instagram or Whatsapp, it provides sudents access to personalisez content, career opportunities, and an official platform to stay connected with college administration and alumni.</p>
         <p class="mont bottom_copy text_white">Copyright &copy; 2020 follege - All Rights Reserved</p>
@@ -130,23 +656,55 @@
         <p class="last_green bottom_para">hello@follege.com</p>
     </div>
       <!-- Footer end -->
-    </div>
 
+      <!-- Footer for Desktop -->
+      <div class="black" id="footer_desk">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-6 col-lg-6">
+                    <p class="text_white openSans no_change" style="text-align: left;">Copyright &copy; 2020 follege - All Rights Reserved.</p>
+                  </div>
+                  <div class="col-md-6 col-lg-6">
+                      <p class="text_white openSans no_change" style="text-align: right;">New Delhi, India</p>            
+                </div>
+              </div>
+          </div>
+                    
+      </div>
+
+      <!--End footer-->
+
+      <!--Mobile menu -->
     <div id="pop_nav">
         <div id="menu">
             <ul onclick="close_menu()" class="menu_list">
-                <li class="mont text_white"><span class="text_white">Community</span></li>
-                <li class="mont text_white"><span class="text_white">Internships</span></li>
-                <li class="mont text_white"><span class="text_white">Contact</span></li>
+                <li onclick = "close_menu()"class="mont text_white"><a href="#footer"><span class="text_white">Community</span></a></li>
+                <li onclick = "close_menu()"class="mont text_white"><a href="Apply"><span class="text_white">Internships</span></a></li>
+                <li onclick = "close_menu()" class="mont text_white"><a href="#mobile_contact"><span class="text_white">Contact</span></a></li>
                 <li onclick="change_page_to_team()" class="mont text_white"><span class="text_white">Team</span></li>
-                <li class="mont text_white"><span onclick="change_page_to_home()" class="text_white">Home</span></li>
+                <li onclick="change_page_to_home()" class="mont text_white"><span class="text_white">Home</span></li>
             </ul>
-            <div id="close_btn"><span onclick="close_menu()">&times;</span></div>
         </div>
         <div  id = "menu_btn" style="display:block;">
-            <img onclick="open_menu()" src="assets/images/output-onlinepngtools.png" class="menu_btn"/>
+            <img onclick="open_menu()" src="assets/images/menu_btn.png" class="menu_btn"/>
         </div>
     </div>
+    <!-- Mobile Menu end -->
+
+    <!--Modal-->
+    <div class="mod white" id="mod">
+        <div class="gec mont text_black">
+            GET EARLY ACCESS
+        </div>
+        <form id="modal_form">
+            <input id="mod_name" class="mont text_black" placeholder="Name" type="text" required>
+            <input id="mod_email" type="email" class="mont text_black" placeholder="Email" required>
+            <input id="mod_clg" type="text" class="mont text_black" placeholder="College Name" required>
+            <input type="submit" class="submit_mod mont" value="SEND">
+        </form>
+        <img src="assets/images/cancel.png" onclick="close_mod()" id="mod_cancel" class="mod_cancel" style="width:30px; position:absolute; right:20px;">
+    </div>
+    <!--Modal end-->
     <script src="assets/js/team_js.js"></script>
     <script src="assets/js/js.js"></script>
 
