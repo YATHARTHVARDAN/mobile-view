@@ -18,7 +18,6 @@ var bottom = document.getElementById("bottom_desk");
 var pop_nav = document.getElementById("pop_nav");
 var mod = document.getElementById("mod");
 var nav = document.getElementById("nav");
-var fr = document.getElementById("fr");
 nav.style.width = screen.width + "px";
 function open_mod()
 {
@@ -42,10 +41,10 @@ var after_fr = document.getElementById("after_fr");
 var mock_up = document.getElementById("mock_up");
 var height_of_mock_up = mock_up.offsetHeight;
 height_of_mock_up = height_of_mock_up/2;
-mock_up.style.top = screen.height - height_of_mock_up + "px";
 var width_of_mock_up = mock_up.offsetWidth;
 mock_up.style.left = (screen.width - width_of_mock_up)/2 + "px";
-after_fr.style.marginTop  = height_of_mock_up + 20 + "px";
+mock_up.style.top = screen.height - height_of_mock_up + 100 + "px";
+
 //End of js for home page
 
 
@@ -116,9 +115,12 @@ var b11 = document.getElementById("block11");
 var b12 = document.getElementById("block12");
 var b21 = document.getElementById("block21");
 var b22 = document.getElementById("block22");
+var b31 = document.getElementById("b31");
+var b32 = document.getElementById("b32");
 
 if(!isMobile)
 {
+    after_fr.style.marginTop  = height_of_mock_up + 300 + "px";
     nav.style.display = "block";
       team_page.style.display="block";
       home_page_fr.style.display = "block";
@@ -126,7 +128,7 @@ if(!isMobile)
       pop_nav.style.display = "none";
       email.style.marginBottom = "30px";
       ename.style.marginBottom = "30px";
-      
+     
       var anim_texts = document.getElementsByClassName("anim_text");
       var i;
       for(i=0;i<anim_texts.length;i++)
@@ -137,6 +139,7 @@ if(!isMobile)
       b12.style.display = "block";
       b21.style.display = "none";
       b22.style.display = "block";
+      b31.style.height = b32.style.height = b22.style.height = b21.style.height = b12.style.height = b11.style.height = screen.height + "px";
       var h4s = document.getElementsByTagName("h4");
       var i;
       for(i=0;i<h4s.length;i++)
@@ -173,10 +176,10 @@ if(!isMobile)
      }
      var cancel = document.getElementById("mod_cancel");
       cancel.style.top = "20px";
-     
 }
 else
 {
+    after_fr.style.marginTop  = height_of_mock_up + 200 + "px";
     fr.style.paddingTop = "10%";
     nav.style.display = "none";
     footer_desk.style.display = "none";
@@ -197,6 +200,7 @@ else
     b12.style.display = "none";
     b21.style.display = "block";
     b22.style.display = "none";
+    
     var h4s = document.getElementsByTagName("h4");
       var i;
       for(i=0;i<h4s.length;i++)
@@ -218,6 +222,22 @@ else
       mod.style.left = "10%";
       var cancel = document.getElementById("mod_cancel");
       cancel.style.bottom = "20px";
+      var removes = document.getElementsByClassName("remove_here");
+      var h;
+      for(h=0;h<removes.length;h++)
+      {
+          var element = document.getElementById(removes[h].id);
+          element.style.marginTop = "0%";
+      }
+      var hers = document.getElementsByClassName("add_here");
+      var d ;
+      for(d=0;d<hers.length;d++)
+      {
+          hers[d].classList.add("add_padding_again");
+      }
+      var specefic = document.getElementById("specefic");
+      specefic.style.paddingtop = "10%";
+
 }
 if(isIpad)
 {

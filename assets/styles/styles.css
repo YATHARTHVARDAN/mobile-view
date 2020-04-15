@@ -76,14 +76,15 @@ html
 #fr
 {
     background-color:black;
+    padding-top:0%;
    
 }
 .head_logo
 {
-    width:80%;
+    width:70%;
     max-width:500px;
-    margin-top:2%;
-    margin-bottom:2%;
+    padding-top:7%;
+    margin-bottom:1%;
 }
 .fingertips
 {   
@@ -109,6 +110,18 @@ html
 {
     color:white;
     background-color:#00e096;
+}
+.green_btn_smaller
+{
+    font-size:50%;
+    padding-top:0px;
+    padding-bottom:0px;
+    width:9%;
+}
+.green_button_smaller
+{
+    padding-top:2%;
+    padding-bottom: 2%;
 }
 .green_btn 
 {
@@ -136,7 +149,7 @@ html
 {
     width:100%;
     text-align: center;
-     align-items: baseline;
+    align-items: baseline;
 }
 .animation
 {
@@ -158,7 +171,7 @@ html
 {
     margin: 0px;
     padding: 0px;
-    font-weight: bold;
+    font-weight: normal;
 }
 .increase_p
 {
@@ -193,8 +206,8 @@ html
 }
 .why
 {
-    padding-top:13%;
-    padding-bottom:10%;
+    padding-top:16%;
+    padding-bottom:16%;
     width:100%;
     padding-left:5%;
     padding-right:5%;
@@ -218,12 +231,12 @@ html
 }
 .why_para_desk
 {
-    font-weight: bold;
+    font-weight: normal;
     margin-bottom: 3%;
 }
 .why_para
 {
-    font-weight:bold;
+    font-weight:normal;
     margin-bottom:5%;
 }
 .mobile_line
@@ -316,6 +329,7 @@ lottie-player
 
 .name_mob,.email_mob
 { 
+    max-width: 500px;
     width:100%;
     border-color: black;
     border-width:2px;
@@ -325,9 +339,18 @@ lottie-player
     margin-bottom: 6%;
     text-align: center;
 }
+.remove_margin
+{
+    margin-top:3%;
+}
+.add_padding_again
+{
+    padding-bottom:17%;
+}
 .name,.email
 {
     width:100%;
+    max-width: 700px;
     padding-left:10px;
     border-width:0px;
     padding-top:7px;
@@ -352,6 +375,8 @@ lottie-player
 {
     text-align: center;
     width:100%;
+    max-width:700px;
+    height:60%;
     border-radius:4px;
     padding-top:7px;
     padding-bottom:7px;
@@ -413,7 +438,10 @@ lottie-player
 .bottom_para_desk
 {
     padding-top:2%;
-    font-weight:bold;
+    font-weight:normal;
+    width:70%;
+    margin-right: auto;
+    margin-left: auto;
 }
 .bottom_copy
 {
@@ -549,7 +577,7 @@ a
 .mod
 {  display:none;
      width:80%;
-    height:40%;
+    padding-bottom: 10%;
     text-align: center;
     padding-right:5%;
     padding-left:5%;
@@ -558,7 +586,7 @@ a
     left:35%;
     background-color: white rgba(255, 255, 255, 0.637);
     max-width:450px;
-    max-height:250px;
+    height: max-content;
     border-radius: 20px;
 }
 #mod_name,#mod_email,#mod_clg
@@ -602,7 +630,7 @@ a
 {
     position:fixed;
     padding-bottom:4px;
-    height:80px;
+    height:75px;
     z-index: 9999;
 }
 .nav_list
@@ -617,6 +645,6 @@ a
     float:right;
     margin-right: 3%;
     font-weight:normal;
-    font-size:100%;
+    
     color:rgb(218, 218, 218);
 }
