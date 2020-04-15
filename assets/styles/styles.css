@@ -655,8 +655,8 @@ a
 }
 .icon
 {
-    font-size:25px;
-    border-width:2px;
+    font-size:20px;
+    border-width:1.5px;
     border-color:rgba(194, 194, 194, 0.788);
     border-radius:10px;
     border-style: solid;
@@ -681,8 +681,8 @@ a
 }
 .center
 {
-    margin-left:20px;
-    margin-right:20px;
+    margin-left:15px;
+    margin-right:15px;
 }
 .insta
 {
