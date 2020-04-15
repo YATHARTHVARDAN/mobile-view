@@ -193,6 +193,7 @@ if(!isMobile)
 }
 else
 {
+    mock_up.style.top = screen.height - height_of_mock_up + 70 + "px";
     after_fr.style.marginTop  = height_of_mock_up + 200 + "px";
     fr.style.paddingTop = "10%";
     nav.style.display = "none";
