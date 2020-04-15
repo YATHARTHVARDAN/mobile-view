@@ -179,7 +179,7 @@ html
 }
 .increase_h4,.increase_h3
 {
-    font-size:200%;
+    font-size:220%;
 }
 .decrease_p
 {
@@ -237,11 +237,8 @@ html
 .why_para
 {
     font-weight:normal;
+    text-align: left;
     margin-bottom:5%;
-}
-.mobile_line
-{
-    line-height: 18px;
 }
 .whatsapp_heading
 {  

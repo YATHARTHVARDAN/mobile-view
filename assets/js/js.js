@@ -251,7 +251,7 @@ else
           hers[d].classList.add("add_padding_again");
       }
       var specefic = document.getElementById("specefic");
-      specefic.style.paddingtop = "10%";
+      specefic.style.paddingTop = "20%";
 
 }
 if(isIpad)
