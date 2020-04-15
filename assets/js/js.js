@@ -19,12 +19,21 @@ var pop_nav = document.getElementById("pop_nav");
 var mod = document.getElementById("mod");
 var nav = document.getElementById("nav");
 nav.style.width = screen.width + "px";
+var ups = document.getElementById("ups");
+var insta = document.getElementById("insta");
 function open_mod()
 {
     mod.style.display = "block";
+    if(screen.height <= 700)
+    {
+        ups.style.display = "none";
+        insta.style.display = "none";
+    }
 }
 function close_mod()
 {
+    ups.style.display = "block";
+        insta.style.display = "block";
     mod.style.display = "none";
 }
 
@@ -196,8 +205,8 @@ if(!isMobile)
 else
 {
     mock_up.style.top = screen.height - height_of_mock_up + 70 + "px";
-    after_fr.style.marginTop  = height_of_mock_up + 200 + "px";
-    fr.style.paddingTop = "10%";
+    after_fr.style.marginTop  = height_of_mock_up + 180 + "px";
+    fr.style.paddingTop = "20%";
     nav.style.display = "none";
     footer_desk.style.display = "none";
     footer.style.display ="block";
@@ -256,11 +265,39 @@ else
       specefic.style.paddingTop = "20%";
       var inc = document.getElementById("increase");
       inc.style.fontSize = "29px";
-
+      var ups = document.getElementById("ups");
+      var insta = document.getElementById("insta");
+      ups.style.width="20px";
+      insta.style.width = "20px";
 
 }
 if(isIpad)
 {
-    fr.style.paddingTop = "20%";
+    fr.style.paddingTop = "30%";
 }
 
+
+$(window).scroll(function(){
+    //more then or equals to
+    if($(window).scrollTop() >= 400 ){
+        $( "#ups" ).css( "display", "block" );
+    //less then 100px from top
+    } else {
+       
+   $( "#ups" ).css( "display", "none" );
+    }
+  });
+
+  document.addEventListener('scroll', window, function (event) {
+    // get current scroll position  
+    var currentScrollPos =    window.scrollTop;
+    if(currentScrollPos >= 400) {
+        var ups = document.getElementById("ups");
+        ups.style.display = "block";
+    }
+    else
+    {
+        var ups = document.getElementById("ups");
+        ups.style.display = "none";
+    }
+}, false); 
