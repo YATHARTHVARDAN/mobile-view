@@ -73,11 +73,13 @@ function open_menu()
     {
         team_page.classList.add("is_blurred");    
     }
+    footer.classList.add("is_blurred");
     menu.style.display = "block";
     menu_btn.style.display = "none";
 }
 function close_menu()
 {
+    footer.classList.remove("is_blurred");
     home_page.classList.remove("is_blurred");
     home_page_fr.classList.remove("is_blurred");
     team_page.classList.remove("is_blurred");
@@ -252,6 +254,9 @@ else
       }
       var specefic = document.getElementById("specefic");
       specefic.style.paddingTop = "20%";
+      var inc = document.getElementById("increase");
+      inc.style.fontSize = "29px";
+
 
 }
 if(isIpad)
