@@ -686,9 +686,9 @@ a
 }
 .insta
 {
-    width:40px;
+    width:50px;
     position:fixed;
-    right:25px;
+    right:20px;
     bottom:100px;
     border-radius: 15px;
     transition-property: width;

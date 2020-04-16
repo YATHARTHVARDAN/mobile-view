@@ -32,11 +32,18 @@ function open_mod()
 }
 function close_mod()
 {
-    ups.style.display = "block";
-        insta.style.display = "block";
+    
     mod.style.display = "none";
 }
 
+var myScrollFunc = function() {
+    var y = window.scrollY;
+    if (y >= 800) {
+      ups.style.display = "block";
+    } else {
+      ups.style.display = "none";
+    }
+  };
 
 
 
@@ -94,6 +101,7 @@ function close_menu()
     team_page.classList.remove("is_blurred");
     menu.style.display = "none";
     menu_btn.style.display = "block";
+
 }
 
 function change_page_to_team()
@@ -200,10 +208,15 @@ if(!isMobile)
          h2s[n].classList.add("increase_h3");
      }
      var cancel = document.getElementById("mod_cancel");
-      cancel.style.top = "20px";
-}
+     insta.style.display = "none";
+    }
 else
 {
+    var meet = document.getElementById("meet");
+    meet.style.fontSize = "30px";
+    var top_heading = document.getElementById("top_heading");
+    top_heading.style.fontSize = "28px";
+    insta.style.display = "block";
     mock_up.style.top = screen.height - height_of_mock_up + 70 + "px";
     after_fr.style.marginTop  = height_of_mock_up + 180 + "px";
     fr.style.paddingTop = "20%";
